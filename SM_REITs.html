@@ -1,0 +1,1681 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1"
+    />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Awaiken" />
+    <!-- Page Title -->
+    <title>Vrudhi India</title>
+    <!-- Favicon Icon -->
+    <link rel="shortcut icon" type="image/x-icon" href="favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon-180x180.png"
+    />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="140x140"
+      href="favicon/apple-touch-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-touch-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-touch-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-touch-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-touch-icon-76x76.png"
+    />
+    <!-- Google Fonts Css-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Bootstrap Css -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" media="screen" />
+    <!-- SlickNav Css -->
+    <link href="css/slicknav.min.css" rel="stylesheet" />
+    <!-- Swiper Css -->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <!-- Font Awesome Icon Css-->
+    <link href="css/all.min.css" rel="stylesheet" media="screen" />
+    <!-- Animated Css -->
+    <link href="css/animate.css" rel="stylesheet" />
+    <!-- Magnific Popup Core Css File -->
+    <!-- <link rel="stylesheet" href="css/magnific-popup.css" /> -->
+    <!-- Mouse Cursor Css File -->
+    <link rel="stylesheet" href="css/mousecursor.css" />
+    <!-- Main Custom Css -->
+    <link href="css/custom.css" rel="stylesheet" media="screen" />
+  </head>
+  <body>
+    <style>
+      /* General FAQ Section Styling */
+      .faq-section-wrapper {
+        background-color: #f8f9fa;
+        padding: 60px 0;
+      }
+
+      .faq-container-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .faq-header-block {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #343a40;
+      }
+
+      /* Accordion Styling */
+      .faq-accordion .card {
+        border: none;
+        margin-bottom: 15px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .faq-accordion .card-header {
+        background-color: #ffffff;
+        padding: 15px 20px;
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #212529;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-accordion .card-header:hover {
+        background-color: #f1f3f5;
+      }
+
+      .faq-accordion .icon {
+        width: 20px;
+        height: 20px;
+        display: inline-block;
+        background: url("data:image/svg+xml;base64,...") no-repeat center;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      /* Rotate icon when active */
+      .faq-accordion .card-header[aria-expanded="true"] .icon {
+        transform: rotate(180deg);
+      }
+
+      .faq-accordion .collapse {
+        border-top: 1px solid #ddd;
+      }
+
+      .faq-accordion .card-body {
+        background-color: #ffffff;
+        padding: 20px;
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #495057;
+        border-radius: 0 0 10px 10px;
+      }
+
+      /* FAQ Overlay Buttons */
+      .faq-content-overlay {
+        text-align: center;
+        padding: 20px 0;
+        cursor: pointer;
+      }
+
+      .btn-text {
+        font-weight: 600;
+        font-size: 1rem;
+        color: #007bff;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .btn-text:hover {
+        color: #0056b3;
+      }
+
+      /* Up & Down Arrows */
+      .up-arrow,
+      .down-arrow {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10px;
+      }
+
+      .up-arrow span,
+      .down-arrow span {
+        display: block;
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid #007bff;
+        border-bottom: 2px solid #007bff;
+        transform: rotate(135deg);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .down-arrow span {
+        transform: rotate(-45deg);
+      }
+
+      /* FAQ Button */
+      .btn-with-arrow-icon-animation {
+        background-color: #007bff;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 5px;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: background 0.3s ease-in-out;
+      }
+
+      .btn-with-arrow-icon-animation:hover {
+        background-color: #0056b3;
+      }
+
+      /* FAQ Section Styling */
+      .faq-section-wrapper {
+        background-color: #f8f9fa;
+        padding: 50px 0;
+      }
+
+      .faq-container-wrapper {
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      /* FAQ Header */
+      .faq-header-block {
+        font-size: 28px;
+        font-weight: bold;
+        color: #333;
+      }
+
+      /* Accordion Styling */
+      .faq-accordion {
+        border-radius: 10px;
+        overflow: hidden;
+      }
+
+      /* FAQ Cards */
+      .faq-item {
+        background: #ffffff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        margin-bottom: 10px;
+        overflow: hidden;
+      }
+
+      /* FAQ Headers */
+      .faq-item .card-header {
+        background: #ffffff;
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #ddd;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .faq-item .card-header:hover {
+        background: #f1f1f1;
+      }
+
+      .faq-item .card-header h5 {
+        font-size: 18px;
+        font-weight: bold;
+        margin: 0;
+        color: #333;
+      }
+
+      .faq-item .icon {
+        width: 15px;
+        height: 15px;
+        background-image: url("data:image/svg+xml;base64,..."); /* Add your SVG plus icon */
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .faq-item .collapsed .icon {
+        transform: rotate(180deg);
+      }
+
+      /* FAQ Body */
+      .faq-item .card-body {
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #555;
+        line-height: 1.6;
+        background: #fff;
+      }
+
+      /* FAQ Tables */
+      .faq-table-1,
+      .faq-table-2 {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 15px;
+        font-size: 14px;
+      }
+
+      .faq-table-1 th,
+      .faq-table-2 th,
+      .faq-table-1 td,
+      .faq-table-2 td {
+        padding: 10px;
+        border: 1px solid #ddd;
+        text-align: left;
+      }
+
+      .faq-table-1 th,
+      .faq-table-2 th {
+        background: #f1f1f1;
+        font-weight: bold;
+      }
+
+      /* FAQ Buttons */
+      .faq-content-overlay .btn-text {
+        color: #007bff;
+        font-weight: bold;
+        cursor: pointer;
+        transition: color 0.3s ease-in-out;
+      }
+
+      .faq-content-overlay .btn-text:hover {
+        color: #0056b3;
+      }
+
+      .btn-with-arrow-icon-animation {
+        background: #007bff;
+        color: #fff;
+        font-size: 16px;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .btn-with-arrow-icon-animation:hover {
+        background: #0056b3;
+      }
+
+      .arrow-icon-block {
+        margin-left: 10px;
+        display: inline-block;
+      }
+
+      .arrow-icon-block .arrow {
+        width: 10px;
+        height: 10px;
+        border-right: 2px solid white;
+        border-bottom: 2px solid white;
+        transform: rotate(45deg);
+        display: inline-block;
+        margin-left: 5px;
+      }
+
+      .footer-share-icons .icon-block {
+        filter: brightness(0.7); /* Makes icons lighter */
+        opacity: 0.8; /* Slight transparency for a soft look */
+        transition: all 0.3s ease-in-out;
+      }
+
+      .footer-share-icons .icon-block:hover {
+        filter: brightness(1); /* Icons become brighter on hover */
+        opacity: 1;
+      }
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      /* FAQ Section */
+      .faq-section-wrapper {
+        background: #f9f9f9;
+        padding: 60px 0;
+      }
+
+      .faq-header-block {
+        font-size: 28px;
+        font-weight: 700;
+        color: #333;
+      }
+
+      .faq-accordion {
+        border-radius: 8px;
+      }
+
+      .faq-item {
+        background: #fff;
+        border-radius: 8px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        transition: all 0.3s ease-in-out;
+      }
+
+      .card-header {
+        background: #fff;
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        color: #444;
+        border-bottom: 1px solid #ddd;
+        transition: background 0.3s;
+      }
+
+      .card-header:hover {
+        background: #f4f4f4;
+      }
+
+      .icon {
+        width: 15px;
+        height: 15px;
+        background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png")
+          no-repeat center center;
+        background-size: contain;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card-header[aria-expanded="true"] .icon {
+        transform: rotate(180deg);
+      }
+
+      .card-body {
+        padding: 15px 20px;
+        font-size: 16px;
+        color: #666;
+      }
+
+      /* REITs Comparison Table */
+      .reits-comparison-wrapper {
+        background: #eef2f7;
+        padding: 50px 0;
+      }
+
+      .section-heading h3 {
+        font-size: 26px;
+        font-weight: 700;
+        color: #222;
+        margin-bottom: 15px;
+      }
+
+      .para-desc {
+        font-size: 18px;
+        color: #555;
+        max-width: 600px;
+        margin: 0 auto 30px;
+      }
+
+      .reits-comparison-table {
+        width: 100%;
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+      }
+
+      th,
+      td {
+        padding: 15px 20px;
+        text-align: center;
+      }
+
+      th {
+        background: #007bff;
+        color: #fff;
+        font-size: 18px;
+      }
+
+      td {
+        font-size: 16px;
+        color: #444;
+        border-bottom: 1px solid #ddd;
+      }
+
+      tr:nth-child(even) {
+        background: #f7f7f7;
+      }
+
+      tr:hover {
+        background: #e9f0ff;
+        transition: all 0.2s ease-in-out;
+      }
+
+      .js-card-highlight {
+        background: #cfe2ff !important;
+      }
+
+      .js-card-highlight2 {
+        background: #ffe0b3 !important;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .faq-header-block {
+          font-size: 24px;
+        }
+
+        .card-header {
+          font-size: 16px;
+          padding: 12px 15px;
+        }
+
+        .card-body {
+          font-size: 14px;
+          padding: 12px 15px;
+        }
+
+        th,
+        td {
+          padding: 12px;
+          font-size: 14px;
+        }
+      }
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+      }
+
+      .faq-section-wrapper {
+        background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        padding: 60px 0;
+      }
+
+      .faq-container-wrapper {
+        max-width: 900px;
+        margin: auto;
+        padding: 20px;
+      }
+
+      .faq-header-block {
+        text-align: center;
+        font-size: 32px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 30px;
+        text-transform: uppercase;
+      }
+
+      .faq-accordion {
+        border-radius: 10px;
+      }
+
+      .faq-item {
+        background: #fff;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease-in-out;
+      }
+
+      .faq-item:hover {
+        transform: translateY(-3px);
+      }
+
+      .card-header {
+        background: #007bff;
+        color: #fff;
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 18px;
+        font-weight: 600;
+        border-radius: 10px;
+        transition: background 0.3s;
+      }
+
+      .card-header:hover {
+        background: #0056b3;
+      }
+
+      .card-header h5 {
+        margin: 0;
+        flex: 1;
+      }
+
+      .icon {
+        width: 20px;
+        height: 20px;
+        background: url("https://cdn-icons-png.flaticon.com/512/130/130906.png")
+          no-repeat center center;
+        background-size: contain;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .card-header[aria-expanded="true"] .icon {
+        transform: rotate(180deg);
+      }
+
+      .card-body {
+        padding: 20px;
+        font-size: 16px;
+        color: #444;
+        border-top: 1px solid #ddd;
+        background: #f9f9f9;
+        border-radius: 0 0 10px 10px;
+      }
+
+      /* Responsive Styles */
+      @media (max-width: 768px) {
+        .faq-header-block {
+          font-size: 26px;
+        }
+        .card-header {
+          font-size: 16px;
+          padding: 12px 15px;
+        }
+        .card-body {
+          font-size: 14px;
+          padding: 15px;
+        }
+      }
+    </style>
+    <!-- Preloader Start -->
+    <div class="preloader">
+      <div class="loading-container">
+        <div class="loading"></div>
+        <div id="loading-icon">
+          <img src="favicon/apple-touch-icon-180x180.png" alt="" />
+        </div>
+      </div>
+    </div>
+    <!-- Preloader End -->
+
+    <!-- Header Start -->
+    <header class="main-header">
+      <div class="header-sticky">
+        <nav class="container">
+          <div class="navbar navbar-expand-lg">
+            <!-- Logo Start -->
+            <a class="navbar-brand" href="#">
+              <img src="Vrudhi_logo/Vrudhi_Logo_2.png" alt="Logo" />
+            </a>
+            <!-- Logo End -->
+
+            <!-- Main Menu Start -->
+            <div class="collapse navbar-collapse main-menu">
+              <div class="nav-menu-wrapper">
+                <ul class="navbar-nav mr-auto" id="menu">
+                  <li class="nav-item">
+                    <a class="nav-link" href="opportunities.html"
+                      >opportunities</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="SM_REITs.html">SM REITs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="why_vrudhi.html"
+                      >Why Vrudhi Prop</a
+                    >
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="#">Who We are</a>
+                    <ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="about.html">About us</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="history.html">Owr History</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="leadership.html"
+                          >Leadership</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="nav-item submenu">
+                    <a class="nav-link" href="#">More</a>
+                    <ul>
+                      <li class="nav-item">
+                        <a class="nav-link" href="latestblogs.html"
+                          >Latest Blogs</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="knowledge_centre.html"
+                          >Knowledge Center</a
+                        >
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact us</a>
+                      </li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-btn d-inline-flex">
+                <a href="contact.html" class="btn-default">get in touch</a>
+              </div>
+              <!-- Header Btn Start -->
+              <!-- <div class="header-btn d-inline-flex">
+                <a href="contact.html" class="btn-default">get in touch</a>
+              </div> -->
+              <!-- Header Btn End -->
+            </div>
+            <!-- Main Menu End -->
+            <div class="navbar-toggle"></div>
+          </div>
+        </nav>
+        <div class="responsive-menu"></div>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Hero Section Start -->
+    <div class="hero parallaxie">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-10">
+            <!-- Hero Content Start -->
+            <div class="hero-content">
+              <!-- Section Title Start -->
+              <div class="section-title">
+                <h2
+                  class="text-anime-style-2"
+                  data-cursor="-opaque"
+                  style="color: white"
+                >
+                  modern approach to investing in commercial real estate.
+                </h2>
+                <p class="wow fadeInUp" data-wow-delay="0.2s">
+                  Smarter Investing in Commercial Real Estate. Backed by SEBI
+                  regulations, offering transparency, steady returns, and
+                  long-term value appreciation.
+                </p>
+              </div>
+              <!-- Section Title End -->
+
+              <!-- Hero Button Start -->
+
+              <!-- Hero Button End -->
+            </div>
+            <!-- Hero Content End -->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sm-reit-info-wrapper">
+      <div class="sm-reit-container">
+        <div class="sm-reit-content">
+          <div class="sm-reit-text">
+            <h2 class="sm-reit-heading">What is an SM REIT?</h2>
+            <p class="sm-reit-description">
+              SM REIT stands for Small and Medium Real Estate Investment Trusts.
+              They are a subclass within the REIT framework, providing access to
+              individual investors to rent-yielding real estate assets such as
+              office buildings, retail malls, hotels, and hospitals. These
+              assets are valued between Rs. 50 - 500 crores.
+            </p>
+            <p class="sm-reit-description">
+              Like traditional REITs, SM REIT units are also traded on the stock
+              exchange and are regulated by the Securities and Exchange Board of
+              India (SEBI), offering investors a structured and transparent
+              investment option.
+            </p>
+          </div>
+          <div class="sm-reit-image">
+            <img src="Vrudhi_logo/SMREITS.jpg" alt="SM REITs Image" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <style>
+      /* Full-width container */
+      .sm-reit-info-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f9fa;
+        padding: 60px 0;
+        width: 100%;
+      }
+
+      .sm-reit-container {
+        width: 100%;
+        max-width: 1600px; /* Allows content to spread but keeps it readable */
+        background: #fff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .sm-reit-container:hover {
+        transform: scale(1.02);
+      }
+
+      /* Flexbox for side-by-side layout */
+      .sm-reit-content {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        width: 100%;
+      }
+
+      .sm-reit-text {
+        flex: 1;
+        text-align: left;
+        padding: 0 40px;
+      }
+
+      .sm-reit-heading {
+        font-size: 36px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .sm-reit-description {
+        font-size: 16px; /* Reduced text size */
+        color: #555;
+        line-height: 1.6;
+      }
+
+      .sm-reit-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .sm-reit-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .sm-reit-container {
+          padding: 30px;
+        }
+
+        .sm-reit-content {
+          flex-direction: column;
+          text-align: center;
+        }
+
+        .sm-reit-text {
+          text-align: center;
+          padding: 0 20px;
+        }
+
+        .sm-reit-heading {
+          font-size: 28px;
+        }
+
+        .sm-reit-description {
+          font-size: 14px;
+        }
+      }
+    </style>
+    <!-- Benefits Section -->
+    <section class="sm-reit-benefits-section">
+      <div class="sm-reit-benefits-container">
+        <div class="sm-reit-benefits-image">
+          <img src="Vrudhi_logo/benefits.webp" alt="SM REITs Benefits Image" />
+        </div>
+        <div class="sm-reit-benefits-text">
+          <h2 class="sm-reit-benefits-heading">
+            Benefits of Investing in SM REITs
+          </h2>
+          <p>
+            <strong>Diversification:</strong> Investors gain exposure to a
+            diversified portfolio of real estate assets without the need to
+            manage properties directly.
+          </p>
+          <p>
+            <strong>Liquidity:</strong> SM REIT units are traded on stock
+            exchanges, providing investors with the flexibility to buy or sell
+            units, thereby offering liquidity compared to traditional real
+            estate investments.
+          </p>
+          <p>
+            <strong>Professional Management:</strong> Experienced investment
+            managers handle asset selection, acquisition, and management, aiming
+            to optimize returns for investors.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      /* Benefits Section */
+      .sm-reit-benefits-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #f8f9fa;
+        padding: 60px 0;
+        width: 100%;
+      }
+
+      .sm-reit-benefits-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1400px;
+        background: #fff;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 0px 4px 15px rgba(111, 107, 107, 0.1);
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .sm-reit-benefits-container:hover {
+        transform: scale(1.02);
+      }
+
+      .sm-reit-benefits-image {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+      }
+
+      .sm-reit-benefits-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+      }
+
+      .sm-reit-benefits-text {
+        flex: 1;
+        text-align: left;
+        padding: 0 40px;
+      }
+
+      .sm-reit-benefits-heading {
+        font-size: 30px;
+        font-weight: bold;
+        color: #2c3e50;
+        margin-bottom: 20px;
+      }
+
+      .sm-reit-benefits-text p {
+        font-size: 16px;
+        color: #333;
+        line-height: 1.6;
+        padding: 10px 0;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .sm-reit-benefits-text p:last-child {
+        border-bottom: none;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 992px) {
+        .sm-reit-benefits-container {
+          flex-direction: column;
+          text-align: center;
+          padding: 30px;
+        }
+
+        .sm-reit-benefits-text {
+          text-align: center;
+          padding: 0 20px;
+        }
+
+        .sm-reit-benefits-heading {
+          font-size: 24px;
+        }
+
+        .sm-reit-benefits-text p {
+          font-size: 14px;
+        }
+      }
+    </style>
+
+    <div>
+      <div
+        class="reits-comparison-wrapper has-bg-grey js-reits-comparison-wrapper"
+      >
+        <div class="container">
+          <div class="section-wrapper">
+            <div class="section-heading">
+              <h3 class="h3-regular text-center">SM REITs vs Regular REITs</h3>
+            </div>
+            <div class="section-content"></div>
+
+            <div class="reits-comparison-table">
+              <table class="table table-responsive">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>SM REITs</th>
+                    <th>Regular REITs</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>Choice of assets</td>
+                    <td>Yes</td>
+                    <td>No</td>
+                  </tr>
+                  <tr>
+                    <td>Investment strategy</td>
+                    <td>Focused single asset approach</td>
+                    <td>Portfolio of multiple assets</td>
+                  </tr>
+
+                  <tr class="js-card-highlight">
+                    <td>Types of assets</td>
+                    <td>100% leased</td>
+                    <td>Leased, under construction &amp; land</td>
+                  </tr>
+
+                  <tr class="js-card-highlight2">
+                    <td>Under construction assets</td>
+                    <td>Not permitted</td>
+                    <td>Up to 20% of the value of REIT is permitted</td>
+                  </tr>
+
+                  <tr>
+                    <td>Size</td>
+                    <td>Rs. 50 - 500 crores</td>
+                    <td>&gt; Rs. 500 crores</td>
+                  </tr>
+
+                  <tr>
+                    <td>Listed</td>
+                    <td>Yes</td>
+                    <td>Yes</td>
+                  </tr>
+
+                  <tr>
+                    <td>Hold period</td>
+                    <td>4-6 years</td>
+                    <td>Long-term</td>
+                  </tr>
+
+                  <tr>
+                    <td>Minimum trading lot</td>
+                    <td>Rs. 10 lakhs</td>
+                    <td>One unit</td>
+                  </tr>
+
+                  <tr>
+                    <td>Related party transaction</td>
+                    <td>Not allowed</td>
+                    <td>Allowed</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="propshare-section-wrapper faq-section-wrapper js-faq-section-wrapper"
+    >
+      <div class="container faq-container-wrapper p-0">
+        <section>
+          <h2 class="text-center mb-4 faq-header-block">FAQs</h2>
+          <div class="row">
+            <div
+              class="col-lg-10 offset-lg-1 col-md-10 offset-md-1 col-sm-12 offset-sm-0"
+            >
+              <div
+                class="faq-accordion accordion-list js-faq-accordion has-fixed-height"
+                id="accordion"
+              >
+                <div class="card faq-item">
+                  <div
+                    class="card-header"
+                    id="headingOne"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="false"
+                    aria-controls="collapseOne"
+                  >
+                    <h5 class="mb-0">What is an SM REIT?</h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseOne"
+                    class="collapse"
+                    aria-labelledby="headingOne"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      SM REIT stands for Small and Medium Real Estate Investment
+                      Trusts and they are a subclass within the REIT framework
+                      that provides access to individual investors to rent
+                      yielding real estate like office buildings, retail malls,
+                      hotels, hospitals etc. that are valued between Rs. 50 and
+                      500 crores. Similar to REITs, SM REIT units will also be
+                      traded on the stock exchange and are regulated by the
+                      Securities and Exchange Board of India (SEBI).
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header"
+                    id="headingTwo"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    <h5 class="mb-0">
+                      Why did SEBI introduce SM REITs regulations?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseTwo"
+                    class="collapse"
+                    aria-labelledby="headingTwo"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      SEBI introduced the SM REIT regulations with the objective
+                      of making smaller real estate assets valued between Rs.
+                      50-500 crores more accessible to the retail and
+                      institutional investors. Mainboard REITs are only allowed
+                      to list assets over Rs. 500 crores but there exists a
+                      significant market of rent yielding assets valued less
+                      than 500 crores that can also be monetized through a
+                      listed and regulated trust vehicle on the same lines as
+                      mainboard REITs. The SM REIT regulations also helped bring
+                      the existing fractional ownership platforms within the
+                      regulatory ambit.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header"
+                    id="headingThree"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    <h5 class="mb-0">
+                      When will the first SM REIT be available for investing?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseThree"
+                    class="collapse"
+                    aria-labelledby="headingThree"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      SEBI has issued regulations for the listing of SM REITs
+                      and Property Share has received the first SM REIT
+                      registration certificate in India. The availability of the
+                      first SM REIT shall be contingent upon the filing and
+                      requisite approval of the draft offer document from the
+                      SEBI.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header"
+                    id="headingFour"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseFour"
+                    aria-expanded="false"
+                    aria-controls="collapseFour"
+                  >
+                    <h5 class="mb-0">What is the minimum ticket size?</h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseFour"
+                    class="collapse"
+                    aria-labelledby="headingFour"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      The minimum investment shall be in units of Rs 10 lakh and
+                      additional investments would be in multiples of Rs 10
+                      lakhs.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header card-highlight js-custom-auth-modal-messages"
+                    id="headingSix"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSix"
+                    aria-expanded="false"
+                    aria-controls="collapseSix"
+                  >
+                    <h5 class="mb-0">
+                      What is the tax treatment for SM REITs?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseSix"
+                    class="accordianWithExtraHeight collapse"
+                    aria-labelledby="headingSix"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      <div>Taxation on sale of units for unitholders</div>
+                      <div class="table-type-1-content-wrapper">
+                        <table class="faq-table-1">
+                          <thead>
+                            <tr>
+                              <th>Period of Holding</th>
+                              <th>Tax rates*</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>More than 12 months (LTCG)</td>
+                              <td>12.5% on gains exceeding INR 1.25 lacs</td>
+                            </tr>
+                            <tr>
+                              <td>Less than or equal to 12 months (STCG)</td>
+                              <td>20%</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="faq-answers">
+                        Taxation on income distribution for unitholders
+                      </div>
+                      <div class="table-type-2-content-wrapper">
+                        <table class="faq-table-2">
+                          <thead>
+                            <tr>
+                              <th>Income recipient</th>
+                              <th>Nature of income</th>
+                              <th>Tax rates*</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>Resident unitholders</td>
+                              <td>
+                                <p>Interest income</p>
+                                <p>Qualified dividend income</p>
+                                <p>Disqualified dividend income</p>
+                                <p>
+                                  Any other income taxable in the hands of
+                                  Scheme
+                                </p>
+                                <p>Any distributions other than the above</p>
+                              </td>
+                              <td>
+                                <p>At applicable tax slab rates^</p>
+                                <p>Tax exempt</p>
+                                <p>At applicable tax slab rates^</p>
+                                <p>Tax exempt</p>
+                                <p class="m-0">
+                                  Taxable once such distributions exceed the
+                                  issue price of unit^
+                                </p>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>Non-resident unitholders</td>
+                              <td>
+                                <p>Interest income</p>
+                                <p>Qualified dividend income</p>
+                                <p>Disqualified dividend income</p>
+                                <p>
+                                  Any other income taxable in the hands of
+                                  Scheme
+                                </p>
+                                <p>Any distributions other than the above</p>
+                              </td>
+                              <td>
+                                <p>5%^</p>
+                                <p>Tax exempt</p>
+                                <p>At applicable tax slab rates^</p>
+                                <p>Tax exempt</p>
+                                <p class="m-0">
+                                  Taxable once such distributions exceed the
+                                  issue price of unit^
+                                </p>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div class="faq-tax-answers-3">
+                        *Check with the tax advisor for details as applicability
+                        may vary under certain scenarios. Tax rates are
+                        excluding applicable surcharge and cess.
+                      </div>
+                      <div class="faq-tax-answers-4">
+                        ^The income shall be subject to deduction of tax at
+                        source
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header js-faq-less-content-overlay-common"
+                    id="headingSeven"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseSeven"
+                    aria-expanded="false"
+                    aria-controls="collapseSeven"
+                  >
+                    <h5 class="mb-0">
+                      What is the process for investing in SM REITs?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseSeven"
+                    class="collapse"
+                    aria-labelledby="headingSeven"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      An SM REIT will come out with an initial public offering
+                      for every new scheme and the process of investing is
+                      therefore the same as investing in an IPO. You can
+                      subscribe to the listing directly via your demat account
+                      and can also purchase units of previously listed SM REIT
+                      schemes from the stock exchange. Further, please note that
+                      this is subject to further guidance, circulars or
+                      notifications to be issued by the SEBI and stock
+                      exchanges.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header js-faq-less-content-overlay-common"
+                    id="headingNine"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseNine"
+                    aria-expanded="false"
+                    aria-controls="collapseNine"
+                  >
+                    <h5 class="mb-0">
+                      Who selects and manages the assets for SM REITs?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseNine"
+                    class="collapse"
+                    aria-labelledby="headingNine"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      The investment manager selects, acquires, manages and
+                      sells the assets for all schemes.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header js-faq-less-content-overlay-common"
+                    id="headingTen"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTen"
+                    aria-expanded="false"
+                    aria-controls="collapseTen"
+                  >
+                    <h5 class="mb-0">
+                      What fees does the Investment Manager charge?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseTen"
+                    class="collapse"
+                    aria-labelledby="headingTen"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      The investment manager charges a fee in terms of the
+                      investment management agreement executed amongst the
+                      Trustee and the Investment Manager . The details of the
+                      fee are provided in the offer document and on the website
+                      of the investment manager.
+                    </div>
+                  </div>
+                </div>
+                <div class="card faq-item">
+                  <div
+                    class="card-header js-faq-less-content-overlay-common"
+                    id="headingTwelve"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwelve"
+                    aria-expanded="false"
+                    aria-controls="collapseTwelve"
+                  >
+                    <h5 class="mb-0">
+                      What are the risks of investing in an SM REIT?
+                    </h5>
+                    <span class="icon"></span>
+                  </div>
+                  <div
+                    id="collapseTwelve"
+                    class="collapse"
+                    aria-labelledby="headingTwelve"
+                    data-bs-parent="#accordion"
+                  >
+                    <div class="card-body">
+                      There are risks to investing in an SM REIT, amongst others
+                      - vacancy risk and exit risk. Vacancy risk is the risk
+                      that the tenant in the asset will vacate the property
+                      prior to the culmination of the tenancy in the future at
+                      which point the asset will need to be re-leased, which may
+                      lead to a temporary loss of income. Exit risk is the risk
+                      that that asset may take a longer period to sell than
+                      expected, especially in cyclical market conditions.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="faq-content-overlay js-faq-content-overlay js-faq-more-content-overlay js-custom-auth-modal-messages"
+            data-pageName="faq"
+          >
+            
+        </section>
+      </div>
+    </div>
+
+    <!-- Footer Start -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- Footer Header Start -->
+            <div class="footer-header">
+              <div class="row align-items-center">
+                <div class="col-md-6">
+                  <!-- Footer Logo Start -->
+                  <div class="footer-logo">
+                    <img src="Vrudhi_logo/Vrudhi_Logo_2.png" alt="" />
+                  </div>
+                  <!-- Footer Logo End -->
+                </div>
+
+                <div class="col-md-6">
+                  <!-- Footer Social Link Start -->
+                  <div class="footer-social-links">
+                    <div class="footer-social-link-title">
+                      <h3>follow our socials</h3>
+                    </div>
+                    <ul>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-facebook-f"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-dribbble"></i
+                        ></a>
+                      </li>
+                      <li>
+                        <a href="index.html#"
+                          ><i class="fa-brands fa-instagram"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <!-- Footer Social Link End -->
+                </div>
+              </div>
+            </div>
+            <!-- Footer Header End -->
+          </div>
+
+          <div class="col-lg-3 col-md-6">
+            <!-- Footer Links Start -->
+            <div class="footer-links"></div>
+            <p style="color: white">
+              Vrudhi Properties <br />
+              112/C, Sri Sai Baba Officer’s Colony, Madhavapuri Colony,
+              Sainikpuri, Secunderabad, Telangana 500094
+            </p>
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="footer-contact-content">
+                <p>+91 7075922256</p>
+              </div>
+            </div>
+            <div class="footer-contact-item">
+              <div class="icon-box">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="footer-contact-content">
+                <p>info@vrudhiindia.com</p>
+              </div>
+            </div>
+
+            <!-- Footer Links End -->
+          </div>
+          <div class="col-lg-3 col-md-6"></div>
+          <div class="col-lg-3 col-md-6"></div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Footer Links Start -->
+            <div class="footer-links">
+              <h3>legal</h3>
+              <ul>
+                <li><a href="about.html">Privacy Policy</a></li>
+                <li><a href="services.html">Terms and Conditions</a></li>
+                <li><a href="index.html#"> Disclaimer</a></li>
+                <li><a href="blog.html">Announcement</a></li>
+                <li><a href="projects.html">Corporate Governance</a></li>
+              </ul>
+            </div>
+            <!-- Footer Links End -->
+          </div>
+          <div class="col-lg-3 col-md-6">
+            <!-- Footer Links Start -->
+
+            <!-- Footer Links End -->
+          </div>
+        </div>
+
+        <!-- Footer Copyright Section Start -->
+        <div class="footer-copyright">
+          <div class="row">
+            <div class="col-md-12" style="color: white">
+              <div class="para-block">
+                <p
+                  class="copyright-para-text"
+                  style="font-size: 12px; line-height: 1.5"
+                >
+                  Vrudhi India is the Investment Manager.schemes registered
+                  under the Trust (Small and Medium Real Estate Investment Trust
+                  registered with SEBI).
+                </p>
+                <p
+                  class="copyright-para-text"
+                  style="font-size: 12px; line-height: 1.5"
+                >
+                  For direct filing of complaints on SCORES in a few quick steps
+                  (a) Register on SCORES portal (b) Fill in all the mandatory
+                  details for filing complaints on SCORES - name, PAN, address,
+                  mobile number, email ID. Benefits for this will be effective
+                  communication and speedy redressal of the grievances.
+                </p>
+                <p
+                  class="copyright-para-text"
+                  style="font-size: 12px; line-height: 1.5; cursor: pointer"
+                >
+                  SEBI Scores Portal :
+                  <a href="https://scores.sebi.gov.in" target="_blank"
+                    >https://scores.sebi.gov.in</a
+                  >. Securities market approach to online dispute resolution
+                  through ODR portal:
+                  <a href="https://smartodr.in/login" target="_blank"
+                    >https://smartodr.in/login</a
+                  >
+                </p>
+                <p
+                  class="copyright-para-text copyright-para-text-4"
+                  style="font-size: 12px; line-height: 1.5"
+                >
+                  For any queries and grievance redressal related matters please
+                  write to the compliance officer – Mr. Vijay Gopal, Phone no
+                  +91 7075922256, Email id -
+                  <a
+                    href="mailto:compliance.officer@propertyshare.in"
+                    style="cursor: pointer"
+                  >
+                    info@vrudhiindia.com</a
+                  >
+                </p>
+              </div>
+              <!-- Footer Copyright Start -->
+              <div class="footer-copyright-text">
+                <p style="font-size: 12px; line-height: 1.5">
+                  Copyright © 2025 Revolynk Techs Private Limited. All Rights
+                  Reserved.
+                </p>
+              </div>
+              <!-- Social Media Icons -->
+              <div class="footer-share-icons d-flex justify-content-end">
+                <a
+                  rel="nofollow"
+                  href="https://www.facebook.com/propertyshare.in"
+                  target="_blank"
+                  class="icon-block small-icons-sprite icon-facebook"
+                ></a>
+                <a
+                  rel="nofollow"
+                  href="https://www.youtube.com/@property_share"
+                  target="_blank"
+                  class="icon-block small-icons-sprite icon-youtube"
+                ></a>
+                <a
+                  rel="nofollow"
+                  href="https://www.linkedin.com/company/propertyshare/"
+                  target="_blank"
+                  class="icon-block small-icons-sprite icon-linkedin"
+                ></a>
+                <a
+                  rel="nofollow"
+                  href="https://x.com/propertyshare3"
+                  target="_blank"
+                  class="icon-block small-icons-sprite icon-twitter"
+                ></a>
+                <a
+                  rel="nofollow"
+                  href="https://www.instagram.com/property_share"
+                  target="_blank"
+                  class="icon-block small-icons-sprite icon-instagram"
+                ></a>
+              </div>
+              <!-- Footer Copyright End -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Footer Copyright Section End -->
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- Jquery Library File -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <!-- Bootstrap js file -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Validator js file -->
+    <script src="js/validator.min.js"></script>
+    <!-- SlickNav js file -->
+    <script src="js/jquery.slicknav.js"></script>
+    <!-- Swiper js file -->
+    <script src="js/swiper-bundle.min.js"></script>
+    <!-- Counter js file -->
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <!-- Isotop js file -->
+    <script src="js/isotope.min.js"></script>
+    <!-- Magnific js file -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <!-- SmoothScroll -->
+    <script src="js/SmoothScroll.js"></script>
+    <!-- Parallax js -->
+    <script src="js/parallaxie.js"></script>
+    <!-- MagicCursor js file -->
+    <script src="js/gsap.min.js"></script>
+    <script src="js/magiccursor.js"></script>
+    <!-- Text Effect js file -->
+    <script src="js/SplitText.js"></script>
+    <script src="js/ScrollTrigger.min.js"></script>
+    <!-- YTPlayer js File -->
+    <script src="js/jquery.mb.YTPlayer.min.js"></script>
+    <!-- Wow js file -->
+    <script src="js/wow.min.js"></script>
+    <!-- Main Custom js file -->
+    <script src="js/function.js"></script>
+  </body>
+</html>
